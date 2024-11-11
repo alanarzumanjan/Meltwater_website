@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="apps/nav.css">
+    <link rel="stylesheet" href="apps/language.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0C4F83;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    .contacts-html {border-bottom: 3px solid red;}
+
+    button {
+            /* background-color: #007BFF; */
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            /* background-color: #0056b3; */
+            background-color: #e74c3c;
+        }
+
+        .submit {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <img src="apps/logo.png" alt="Meltwater">
+    <div class="drop">
+        <button class="nav-btn"> &#9776; </button>
+
+        <div class="nav-list">
+
+            <a class="main-html" href="main.html" data-translate="home">Home</a>
+            <a class="shop-html" href="shop.html" data-translate="shop">Shop</a>
+            <a class="info-html" href="info.html" data-translate="info">Info</a>
+            <a class="contacts-html" href="contacts.html" data-translate="contacts">Contacts</a>
+        </div>
+
+        <div class="language-selector">
+            <img src="apps/language.png" alt="language-selector" class="language-selector-img">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="lv">Latvian</option>
+                <option value="rs">Russian</option>
+            </select>
+        </div>
+    </div>
+
+</nav>
+<main>
+    <div class="contact-information">
+        
+        <div class="container">
+            <h2 data-translate="Contact-information">Contact information</h2>
+                <p><strong data-translate="Address">Address:</strong> Iela, Pilseta etc.</p>
+                <p><strong data-translate="Phone">Phone:</strong> +371 85 920 233</p>
+                <p><strong data-translate="Email">Email:</strong> companyname@gmail.com</p>
+
+            <h2 data-translate="our-social-networks">Our social networks</h2>
+                <p data-translate="social-media">You can also follow us on social media:</p>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+
+            <h2 data-translate="Feedback-form">Feedback form</h2>
+            <p data-translate="Comments">If you have any questions or comments, please fill out the feedback form below:</p>
+
+            <form action="main.html" method="post">
+                <label for="name" data-translate="Your-name:">Your name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" data-translate="Your-email">Your email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" data-translate="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" data-translate="submit">
+                    <a class="submit" href="main.html">Submit</a>
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+
+</body>
+<script src="translate.js"></script>
+</html>

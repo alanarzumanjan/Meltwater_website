@@ -1,0 +1,41 @@
+.language-selector-img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 30px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.language-selector {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#language-select {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #282d32;
+    padding: 3px;
+    color: white;
+}
+
+#language-select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#language-select::after {
+    content: "▼";
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

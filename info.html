@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information</title>
+    <link rel="stylesheet" href="apps/nav.css">
+    <link rel="stylesheet" href="apps/language.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0C4F83;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .info-html {
+            border-bottom: 3px solid red;
+        }
+
+        button {
+            /* background-color: #007BFF; */
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            /* background-color: #0056b3; */
+            background-color: #e74c3c;
+        }
+
+        .submit {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <img src="apps/logo.png" alt="Meltwater">
+    <div class="drop">
+        <button class="nav-btn"> &#9776; </button>
+
+        <div class="nav-list">
+
+            <a class="main-html" href="main.html" data-translate="home">Home</a>
+            <a class="shop-html" href="shop.html" data-translate="shop">Shop</a>
+            <a class="info-html" href="info.html" data-translate="info">Info</a>
+            <a class="contacts-html" href="contacts.html" data-translate="contacts">Contacts</a>
+        </div>
+
+        <div class="language-selector">
+            <img src="apps/language.png" alt="language-selector" class="language-selector-img">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="lv">Latvian</option>
+                <option value="rs">Russian</option>
+            </select>
+        </div>
+    </div>
+
+</nav>
+
+    <div class="contact-information">
+
+        <div class="container">
+            <h2 data-translate="info-title">Information</h2>
+            <p data-translate="info-text-forcompany">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut sequi dolor consequatur obcaecati ex iste consequuntur tenetur in, voluptatem, facere eos quod expedita error, sapiente similique. Odio, atque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ut beatae sequi temporibus dolorem reiciendis corrupti distinctio minus ipsum aperiam, accusantium illum mollitia perspiciatis! Fugit, nam! Voluptatem ratione consectetur maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="translate.js"></script>
+</html>

@@ -1,0 +1,86 @@
+nav {
+    display: flex;
+    background-color:#282d32;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.nav-list, .language-selector {
+    display: flex;
+    overflow: hidden;
+}
+
+.nav-list a, .language-selector {
+    display: flex;
+    padding: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.nav-list a:hover {
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+    border-bottom: 3px solid red;
+}
+
+.language-select:hover {
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+    border-bottom: 3px solid red;
+}
+.nav-btn {
+    display: none;
+}
+
+nav>img { 
+    padding-top: 2px; padding-bottom: 2px;
+    width: 150px;
+    height: 59px; 
+    margin: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn {
+    display: block;
+    font-size: 3em;
+    padding-inline: 10px;
+    padding-bottom: 3px;
+    background-color:#282d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }  
+    .language-selector {
+        display: none;
+        /* Hide the language selector in the dropdown */
+    }
+    .nav-list {
+    display: none;
+    }
+   .nav-list a[data-translate="contacts"]:hover {
+       border-bottom: none;
+   }
+    .drop:hover .nav-list{
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color:#282d32;
+        border-bottom: 3px solid red;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(70, 70, 70);
+    }
+
+}

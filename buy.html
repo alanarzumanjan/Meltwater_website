@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="quantity"],
+        select,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            /* background-color: #007BFF; */
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            /* background-color: #0056b3; */
+            background: #c0392b;
+        }
+
+        .submit {
+            text-decoration: none;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Purchase form</h1>
+        <form action="shop.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Surname:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="name">Delivery address:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="product">Enter the quantity:</label>
+            <input type="quantity" id="quantity" name="quantity" required>
+            
+            <label for="product">Bank card:</label>
+            <input type="quantity" id="quantity" name="quantity" required>
+
+            <label for="comments">Komments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">
+                <a class="submit" href="shop.html">Submit</a>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
